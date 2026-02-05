@@ -11,3 +11,7 @@ Node.js is built on the V8 JavaScript engine, the same engine that powers Google
 ### The Architecture
 
 ![Node.js Architecture](https://nodesource.com/assets/blog/how-nodejs-works/architecture.png)
+### The Event Loop
+The heart of Node.js is the Event Loop. Unlike traditional web servers that create a new thread for every request, Node.js operates on a single thread, using non-blocking I/O calls. This allows it to support tens of thousands of concurrent connections without incurring the cost of thread context switching.
+
+![The Event Loop](https://nodesource.com/assets/blog/how-nodejs-works/event-loop.png)
